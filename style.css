@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.journal {
+  display: grid;
+  grid-template-columns: 300px auto;
+  background-color: rgb(86, 157, 170);
+  font-family: "Manrope";
+  height: 100vh;
+}
+.journal-section {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(133, 187, 189);
+  padding: 20px;
+}
+.journal .statistics {
+  background-color: rgb(86, 157, 170);
+  color: rgb(255, 255, 255);
+  padding: 20px;
+}
+
+.students-list {
+  background-color: rgb(86, 157, 170);
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  color: rgb(86, 157, 170);
+  padding: 10px;
+  border-radius: 5px;
+}
+.header__content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__content h2 {
+  margin: 0;
+}
+.header__content-div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header__content-div__btn {
+  background-color: rgb(86, 157, 170);
+  color: rgb(255, 255, 255);
+  font-family: "Manrope";
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 5px;
+  cursor: pointer;
+}
+.header__content-div__btn:hover {
+  background-color: rgb(46, 81, 82);
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+.statistic-table {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column-title th {
+  background-color: rgb(215, 236, 243);
+}
+
+.grade-cell {
+  background-color: rgb(209, 167, 221);
+  cursor: pointer;
+}
+.grade-cell:hover {
+  background-color: rgb(141, 102, 153);
+}
+
+.filled-grade {
+  background-color: rgb(156, 206, 175);
+}
+.filled-grade:hover {
+  background-color: rgb(79, 151, 106);
+}
+
+.row {
+  background-color: rgb(215, 236, 243);
+}/*# sourceMappingURL=style.css.map */

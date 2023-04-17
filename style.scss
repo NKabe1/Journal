@@ -1,0 +1,109 @@
+@import "colors";
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.journal {
+  display: grid;
+  grid-template-columns: 300px auto;
+  background-color: $primary-bg-color;
+  font-family: "Manrope";
+  height: 100vh;
+  &-section {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(133, 187, 189);
+    padding: 20px;
+  }
+
+  & .statistics {
+    background-color: $primary-bg-color;
+    color: $primary-color;
+    padding: 20px;
+  }
+}
+
+.students-list {
+  background-color: $primary-bg-color;
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary-color;
+  color: $primary-bg-color;
+  padding: 10px;
+  border-radius: 5px;
+
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & h2 {
+      margin: 0;
+    }
+
+    &-div {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      &__btn {
+        background-color: $primary-bg-color;
+        color: $primary-color;
+        font-family: "Manrope";
+        border: none;
+        border-radius: 8px;
+        padding: 8px;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+      &__btn:hover {
+        background-color: rgb(46, 81, 82);
+      }
+    }
+  }
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+.statistic-table {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column-title th {
+  $primary-color-space: nowrap;
+  background-color: $secondary-bg-color;
+}
+
+.grade-cell {
+  background-color: $unfilled-cell-color;
+  cursor: pointer;
+  &:hover {
+    background-color: $unfilled-cell-color-hover;
+  }
+}
+
+.filled-grade {
+  background-color: $filled-cell-color;
+  &:hover {
+    background-color: $filled-cell-color-hover;
+  }
+}
+
+.row {
+  background-color: $secondary-bg-color;
+}
