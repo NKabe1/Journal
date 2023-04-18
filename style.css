@@ -6,7 +6,7 @@ body {
 
 .journal {
   display: grid;
-  grid-template-columns: 300px auto;
+  grid-template-columns: 250px auto;
   background-color: rgb(86, 157, 170);
   font-family: "Manrope";
   height: 100vh;
@@ -82,7 +82,7 @@ td {
 }
 
 .grade-cell {
-  background-color: rgb(209, 167, 221);
+  background-color: rgb(201, 167, 235);
   cursor: pointer;
 }
 .grade-cell:hover {
